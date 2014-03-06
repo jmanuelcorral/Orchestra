@@ -12,7 +12,7 @@ It have these Tasks:
 - Dependency Injection Container for registering and manage modules lifecycle.
 - DOM Manipulation with a Base Library (at the moment jQuery is the only library supported).
 - DOM Event Manipulation.
-- Mediator for inter-module comunication using publish/subscription events.  
+- Mediator for inter-module comunication using publish/subscription events.   
 
 ## SandBox Layer
 

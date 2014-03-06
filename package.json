@@ -1,0 +1,20 @@
+{
+  "name": "Orchestra",
+  "version": "1.0.0",
+  "description": "A Enterprise Solution for building Scalable Javascript Applications",
+  "main": "orchestra.min.js",
+  "scripts": {
+    "test": "grunt jasmine"
+  },
+  "repository": "http://github.com/jmanuelcorral/orchestrajs",
+  "author": "jmanuelcorral",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-jasmine": "latest"
+  }
+}

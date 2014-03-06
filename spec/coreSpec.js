@@ -1,9 +1,11 @@
+var startvalue = 0;
 var myExampleModule = function(sandbox) {
     return {
         init : function () {
              sandbox.create_element("h1", { 'class' : 'Hello', text : "Hello World Module" });
+             startvalue=1;
         },
-        destroy : function () { }
+        destroy : function () { startvalue=2;}
     };
 };
 
@@ -15,25 +17,25 @@ describe("Testing if Application Core Exists", function(){
 
 describe("Creating a Single Module", function() {
     it("Should create a Module", function() {
-        spyOn(Application.Core, 'create_module').andCallThrough();
+        startvalue=0;
         Application.Core.create_module("TestModule", myExampleModule);
-        expect(Application.Core.create_module).toHaveBeenCalled();
+        expect(startvalue).toBe(0);
     });
 }); 
 
 describe("Starting a Created Module", function() {
     it("Should Start a Created Module", function() {
-        spyOn(myExampleModule, 'init').andCallThrough();
+        startvalue=0;
         Application.Core.start("TestModule");
-        expect(myExampleModule.init).toHaveBeenCalled();
+        expect(startvalue).toBe(1);
     });
 });
 
 describe("Stopping a Single Module", function() {
     it("Should Stop a Module", function() {
-        spyOn(myExampleModule, 'destroy').andCallThrough();
+        startvalue=0;
         Application.Core.stop("TestModule");
-        expect(myExampleModule.destroy).toHaveBeenCalled();
+        expect(startvalue).toBe(2);
     });
 });
 

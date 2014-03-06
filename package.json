@@ -4,7 +4,7 @@
   "description": "A Enterprise Solution for building Scalable Javascript Applications",
   "main": "orchestra.min.js",
   "scripts": {
-    "test": "grunt jasmine"
+    "test": "grunt build"
   },
   "repository": "http://github.com/jmanuelcorral/orchestrajs",
   "author": "jmanuelcorral",

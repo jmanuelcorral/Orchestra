@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
   
-  var srctoBuildFiles = ['./src/**/*.js', '!**/vendor/**'];
-  var srctoTestFiles = ['./src/vendor/jquery.js', './src/core.js', './src/sandbox.js' ,'./src/**/*.js'];
+  var srctoBuildFiles = ['src/**/*.js', '!**/vendor/**'];
+  var srctoTestFiles = ['src/vendor/jquery.js', 'src/core.js', 'src/sandbox.js' ,'src/**/*.js'];
   var specFiles = 'spec/**/*.js';
 
   grunt.initConfig({
@@ -17,9 +17,9 @@ module.exports = function(grunt) {
     uglify: {
       build: {
         src: srctoBuildFiles,
-        dest: './build/orchestra.min.js',
+        dest: 'build/orchestra.min.js',
         options: {
-          sourceMap: './build/orchestra.min.js.map'
+          sourceMap: 'build/orchestra.min.js.map'
         }
       }
     },

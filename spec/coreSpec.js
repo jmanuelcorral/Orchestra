@@ -23,17 +23,17 @@ describe("Creating a Single Module", function() {
 
 describe("Starting a Created Module", function() {
     it("Should Start a Created Module", function() {
-        spyOn(Application.Core, 'start').andCallThrough();
+        spyOn(myExampleModule, 'init').andCallThrough();
         Application.Core.start("TestModule");
-        expect(Application.Core.start).toHaveBeenCalled();
+        expect(myExampleModule.init).toHaveBeenCalled();
     });
 });
 
 describe("Stopping a Single Module", function() {
     it("Should Stop a Module", function() {
-        spyOn(Application.Core, 'stop').andCallThrough();
+        spyOn(myExampleModule, 'destroy').andCallThrough();
         Application.Core.stop("TestModule");
-        expect(Application.Core.stop).toHaveBeenCalled();
+        expect(myExampleModule.destroy).toHaveBeenCalled();
     });
 });
 

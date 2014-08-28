@@ -11,5 +11,8 @@
     "grunt-contrib-jshint": "*",
     "grunt-contrib-uglify": "*",
     "grunt-contrib-watch": "*"
+  },
+  "scripts" : {
+    "test" : "grunt build"
   }
 }

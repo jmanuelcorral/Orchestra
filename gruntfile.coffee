@@ -8,7 +8,7 @@ module.exports = (grunt) ->
         expand : true
         options :
           join : true
-          bare : true
+          bare : false
         files :
           "build/js/orchestra_build.js" : "src/**/*.coffee"
           "specs/js/specs_build.js" : "specs/**/*.coffee"

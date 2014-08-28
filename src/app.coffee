@@ -1,2 +1,2 @@
 #Application Created
-Application = Application or {}
+(window).Application = {}

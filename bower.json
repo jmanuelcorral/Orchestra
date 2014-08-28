@@ -1,0 +1,28 @@
+{
+  "name": "Orchestra",
+  "version": "1.0.1",
+  "homepage": "https://github.com/jmanuelcorral/Orchestra",
+  "authors": [
+    "José Manuel Corral <jose.manuel.corral@gmail.com>"
+  ],
+  "description": "An Enterprise Solution for building Scalable Javascript Applications in Client",
+  "main": "Build/Orchestra.min.js",
+  "keywords": [
+    "core",
+    "sandbox",
+    "module"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1"
+  }
+}

@@ -28,17 +28,16 @@ module.exports = (grunt) ->
     #tests
     jasmine :
       build :
-        src :  ["vendor/jquery.js", "build/js/*.js"]
+        src :  ["vendor/jquery/dist/jquery.js", "build/js/*.js"]
         options : 
           specs : "specs/**/*.js"
           keepRunner : false
-    
     #watch
     watch :
       build :
-        files : ["src/**/*.coffee", "specs/**/*.coffee",  ["vendor/jquery.js", "build/js/*.js"]]
-        tasks : ["coffee", "jshint", "jasmine", "uglify"]
-  
+        files : ["src/**/*.coffee", "specs/**/*.coffee",  ["vendor/jquery/dist/jquery.js", "build/js/*.js"]]
+        tasks : ["coffee", "jshint", "jasmine", "jasmine_node", "uglify"]
+
   #defining tasks
   grunt.loadNpmTasks "grunt-contrib-coffee"
   grunt.loadNpmTasks "grunt-contrib-watch"

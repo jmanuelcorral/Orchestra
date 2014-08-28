@@ -6,10 +6,10 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "grunt-contrib-jshint": "*",
-    "grunt-contrib-watch": "*",
-    "grunt-contrib-uglify": "*",
+    "grunt-contrib-coffee": "*",
     "grunt-contrib-jasmine": "*",
-    "grunt-contrib-coffee": "*"
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
   }
 }

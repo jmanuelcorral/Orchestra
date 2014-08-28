@@ -6,3 +6,5 @@ before_script:
   - npm install -g grunt-cli
   - npm install -g grunt-init
   - npm install -g coffee-script
+  - npm install -g bower
+  - bower install jquery

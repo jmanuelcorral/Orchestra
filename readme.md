@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/jmanuelcorral/Orchestra.png?branch=master)](https://travis-ci.org/jmanuelcorral/Orchestra)
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/jmanuelcorral/orchestra/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+[![Coverage Status](https://img.shields.io/coveralls/jmanuelcorral/Orchestra.svg)](https://coveralls.io/r/jmanuelcorral/Orchestra)
 
 Orchestra Helps you to build complex Javascript Architectures using a Core/SandBox Architecture Pattern Approaching Showed by Nicholas Zakas [http://www.slideshare.net/nzakas/scalable-javascript-application-architecture](http://www.slideshare.net/nzakas/scalable-javascript-application-architecture "Scalable Architectures in Javascript Slides"). 
 
